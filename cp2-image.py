@@ -3,7 +3,7 @@ from PIL import Image, ImageFilter
 def main():
     # Load the image
     try:
-        image = Image.open('example.jpeg')
+        image = Image.open('sunset.jpg')
         print("✅ Image successfully loaded.")
     except Exception as e:
         print(f"❌ An error occurred while opening the image: {e}")
@@ -43,5 +43,5 @@ def main():
     except Exception as e:
         print(f"❌ An error occurred while filtering the image: {e}")
 
-if _name_ == "_main_": # type: ignore
+if __name__ == "__main__": # type: ignore
     main()
